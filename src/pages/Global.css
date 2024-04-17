@@ -27,9 +27,10 @@ h3 {
 
 .content {
     flex-grow: 1;
-    /* background-color: lightgreen; */
-    height: 100vh;
     overflow-y: auto;
+    display: grid;
+    /* justify-items: center; */
+    align-items: center;
 }
 
 .sec-label {
@@ -56,21 +57,18 @@ h3 {
 
 .task-list {
     list-style-type: circle;
-    /* margin-left: 1.5rem;     */
-    /* margin-bottom: 1rem; */
 }
 
 .task-list-item {
     margin-bottom: 0.5rem;
 }
-
 /* experience end */
 
 .about-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100vh; */
     /* background-color: yellow; */
 }
 
@@ -85,4 +83,32 @@ h3 {
 .skills-content {
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+
+.name{
+    font-size: 3rem;
+    text-decoration: underline;
+    margin-bottom: .3em;
+}
+
+.about-sub{
+    font-size: 1.7rem;
+    text-decoration: underline;
+    margin: 1em 0 .3em 0;
+}
+
+/* project */
+.project-container {
+    margin-bottom: 2em;
+}
+
+.dl-btn{
+    text-decoration: none;
+    border:1px solid #fff;
+    padding:.5em;
+    border-radius: 8px;
+}
+
+.dl-btn-container {
+    margin-top: 1em;
 }
