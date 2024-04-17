@@ -1,83 +1,88 @@
-.title-container {
+* {
+    color: rgb(131, 128, 125);
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.section {
+    flex: 0 0 20%;
+    /* background-color: lightblue; */
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    overflow-y: auto;
+
+}
+
+.content {
+    flex-grow: 1;
+    /* background-color: lightgreen; */
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.sec-label {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* experience start */
+.experience-container {
+    margin-bottom: 2em;
+}
+
+.experience-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.2em;
+}
+
+.position-title {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.task-list {
+    list-style-type: circle;
+    /* margin-left: 1.5rem;     */
+    /* margin-bottom: 1rem; */
+}
+
+.task-list-item {
+    margin-bottom: 0.5rem;
+}
+
+/* experience end */
+
+.about-container {
     display: flex;
     justify-content: center;
-}
-
-.title {
-    font-size: 5rem;
-    color: #fff;
-    text-decoration: underline;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    /* background-color: yellow; */
 }
 
 
-/* card */
-.flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin: 1em;
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-.flip-card-back {
-    background-color: #1f1b24;
-    color: #bb86fc;
-    transform: rotateY(180deg);
-    text-align: left;
-    padding: 0 0 0 .5em;
-}
-
-.card-title {
-    font-size: 2rem;
-}
-
-.card-desc {
-    font-size: 1.4rem;
-}
-
-.card-link {
+.about-title,
+.skills-title {
     font-size: 1.5rem;
-    text-decoration: underline;
-    cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
-.card-img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
+.about-content,
+.skills-content {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
